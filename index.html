@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/impress.js/css/impress-demo.css">
+
+<!-- #title q h1{
+    font-size: 1em;
+    text-align: center;
+} -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="impress">
+        <div id="title" class="step slide" data-x="-1000">
+           <!-- <q> pour le fond en mode diapo -->
+            <q>
+                <h2>Git starter commands</h2>
+            </q>
+        </div>
+
+    </div>
+    <!-- le minimum pour impress -->
+    <script src="node_modules/impress.js/js/impress.js"></script>
+    <script>
+        var rootElement = document.querySelector("#impress");
+        rootElement.addEventListener("impress:init", function () {
+            console.log("impress run...");
+        })
+
+        impress().init();
+    </script>
+</body>
+
+</html>
