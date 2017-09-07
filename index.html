@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/impress.js/css/impress-demo.css">
-    <link rel="stylesheet" href="node_modules/impress.js/css/impress-demo.css">
+    <link rel="stylesheet" href="styles\myCss.css">
 
     <!-- #title q h1{
     font-size: 1em;
@@ -43,27 +43,53 @@
 
             </p>
             <p>
-                git add. <strong> &lt;filename&gt;
-                            <span> ajoute les fichiers DU DOSSIER EN COURS dans l'index</span>
-                            
-                        </p>
-    
-                        <p>
-                                git add -A </strong>
+                <strong>git add. </strong>
+                <span> ajoute les fichiers DU DOSSIER EN COURS dans l'index</span>
+
+            </p>
+
+            <p>
+                git add -A </strong>
                 <span> ajoute tous les fichiers  dans l'index</span>
             </p>
             <p>
                 git config --local user.email <strong>&lt;user email&gt; </strong>
                 <span> Initialise un email d'utilisateur</span>
             </p>
+        </div>
+        <!-- layer 3  -->
+        <div class="step slide" id="layer-3" data-x="3000">
+            <h1>Commit</h1>
+            <p>
+                git commit -m "your message"
+                <span> commit des fichier de la zone staging vers le repository</span>
 
+            </p>
+            <p>
+                git commit -a
+                <span> commit des fichier de la zone staging vers le repository et ouvre l'éditeur par défaut pour editer le message</span>
+
+            </p>
 
         </div>
-        <!-- layer 1  -->
-        <div class="step slide" id="layer-1" data-x="1000">
-            <q>
-                                <h1>starter commands</h1>
-                            </q>
+        <!-- layer 4  -->
+        <div class="step slide" id="layer-4" data-x="4000">
+            <h1>Redact Commit message</h1>
+            <ul>
+                <li>Prendre le temps de rédiger son message</li>
+                <li>Ajouter un sujet</li>
+                <li>limiter le message à 50 caractères</li>
+                <li>Ecrire sans accent</li>
+                <li>Répondre à la question : "Pourquoi ?" plutôt que "Comment ?"</li>
+            </ul>
+        </div>
+        <!-- layer 5  -->
+        <div class="step slide" id="layer-5" data-x="5000">
+            <h1>Exemple Commit message</h1>
+            <ul>
+                <li>Calque : </li>
+                <li>Ajouter un nouveau calque à un fichier index.html </li>
+            </ul>
         </div>
 
     </div>
