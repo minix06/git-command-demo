@@ -21,6 +21,7 @@
         <div id="title" class="step slide" data-x="-1000" data-rotate="90">
             <!-- <q> pour le fond en mode diapo -->
             <h1>Git starter commands</h1>
+
             <p>
                 pas de modification sur cette branche
             </p>
@@ -35,6 +36,8 @@
                 git config --local user.email <strong>&lt;user email&gt; </strong>
                 <span> Initialise un email d'utilisateur</span>
             </p>
+            
+            <a href="index2.html">ma page index2</a>
 
         </div>
         <!-- layer 2  -->
@@ -132,7 +135,12 @@
             </p>
         </div>
         <!-- layer-7  -->
+<<<<<<< HEAD
         <div class="step slide" id="layer-7" data-x="7000" data-y="1000">
+=======
+        <!-- <div class="step slide" id="layer-7" data-x="7000" data-y="1000"> -->
+        <div class="step slide" id="layer-7" data-x="7000">
+>>>>>>> testModification
             <h1>format de log</h1>
             <ul>
                 <li>--pretty="..." format de sortie</li>
@@ -157,6 +165,10 @@
                 <span>création d'une release  </span>
             </p>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> testModification
         <!-- layer-9  -->
         <div class="step slide" id="layer-9" data-x="9000">
             <h1>branche...</h1>
@@ -184,6 +196,7 @@
                 git merge <strong>&lt;branchName&gt; </strong>
                 <span>Fusion de branches (et fait la verification de conflit) </span>
             </p>
+<<<<<<< HEAD
 
         </div>
     </div>
@@ -198,6 +211,57 @@
 
         impress().init();
     </script>
+=======
+        </div>
+
+        <!-- layer-10  -->
+        <div class="step slide" id="layer-10" data-x="10000">
+            <ul>
+                <li>Création d'une nouvelle branche (testModification)</li>
+                <li>Ajout de fichier html (au choix), modification de css et du fichier index.html dans cette branche</li>
+                <li>Commit de cette même branche, pour le tp un commit par changement</li>
+                <li>Modification du fichier index.html dans la branche master</li>
+                <li>Commit de celle-ci</li>
+                <li>Merge de la branche master et testModification et correction des conflits</li>
+                <li>Push sur le repository distant</li>
+                <li>En plus refaire la demarhe et essayer des commandes de suppression de branche test des outils graphiques
+                    Git GUI (clic droit sur le repository local) </li>
+            </ul>
+        </div>
+
+        <!-- layer-11  -->
+        <div class="step slide" id="layer-11" data-x="11000">
+            <h1>Repository distant</h1>
+            <p>
+                git remote origin <strong>&lt;url repository&gt; </strong>
+                <span>connexion à un repository distant</span>
+            </p>
+            <p>
+                git push origin
+                <span>Transmet les commit locaux au repository distant d'une ou de plusieurs branches</span>
+            </p>
+            <p>
+                git fetch
+                <span>Importer des éléments du repository distant</span>
+            </p>
+            <p>
+                git clone <strong>&lt;url repository&gt; </strong>
+                <span>copie d'un projet dans un repository local</span>
+            </p>
+        </div>
+
+
+        <!-- le minimum pour impress -->
+        <script src="node_modules/impress.js/js/impress.js"></script>
+        <script>
+            var rootElement = document.querySelector("#impress");
+            rootElement.addEventListener("impress:init", function () {
+                console.log("impress run...");
+            })
+
+            impress().init();
+        </script>
+>>>>>>> testModification
 </body>
 
 </html>
