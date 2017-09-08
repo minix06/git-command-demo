@@ -129,7 +129,7 @@
             </p>
 
             <!-- layer-7  -->
-            <div class="step slide" id="layer-7" data-x="6000" data-y="1000">
+            <div class="step slide" id="layer-7" data-x="7000" data-y="1000">
                 <h1>format de log</h1>
                 <ul>
                     <li>--pretty="..." format de sortie</li>
@@ -143,30 +143,57 @@
                 </ul>
             </div>
             <!-- layer-8  -->
-            <div class="step slide" id="layer-7" data-x="7000">
+            <div class="step slide" id="layer-8" data-x="8000">
                 <h1>Version...</h1>
                 <p>
-                    git tag 
+                    git tag
                     <span>affichage des release  </span>
                 </p>
                 <p>
-                        git tag -a "your message"
-                        <span>création d'une release  </span>
+                    git tag -a "your message"
+                    <span>création d'une release  </span>
+                </p>
+                <!-- layer-9  -->
+                <div class="step slide" id="layer-9" data-x="9000">
+                    <h1>branche...</h1>
+                    <p>
+                        git branch <strong>&lt;branchName&gt; </strong>
+                        <span>création d'une branche  </span>
                     </p>
-    
+                    <p>
+                        git checkout <strong>&lt;branchName&gt; </strong>
+                        <span>connexion à une branche  </span>
+                    </p>
+                    <p>
+                        git checkout -b <strong>&lt;branchName&gt; </strong>
+                        <span>création et connexion à une branche  </span>
+                    </p>
+                    <p>
+                        git branch -d ou -D <strong>&lt;branchName&gt; </strong>
+                        <span>suppression d'une branche -d analyse des commit de la branche et -D force delete </span>
+                    </p>
+                    <p>
+                        git branch
+                        <span>liste des branches </span>
+                    </p>
+                    <p>
+                        git merge <strong>&lt;branchName&gt; </strong>
+                        <span>Fusion de branches (et fait la verification de conflit) </span>
+                    </p>
 
-            </div>
 
-            <!-- le minimum pour impress -->
-            <script src="node_modules/impress.js/js/impress.js"></script>
-            <script>
-                var rootElement = document.querySelector("#impress");
-                rootElement.addEventListener("impress:init", function () {
-                    console.log("impress run...");
-                })
+                </div>
 
-                impress().init();
-            </script>
+                <!-- le minimum pour impress -->
+                <script src="node_modules/impress.js/js/impress.js"></script>
+                <script>
+                    var rootElement = document.querySelector("#impress");
+                    rootElement.addEventListener("impress:init", function () {
+                        console.log("impress run...");
+                    })
+
+                    impress().init();
+                </script>
 </body>
 
 </html>
