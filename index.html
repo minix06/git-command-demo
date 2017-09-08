@@ -18,7 +18,7 @@
 <body>
     <!-- layer 1 -->
     <div id="impress">
-        <div id="title" class="step slide" data-x="-1000">
+        <div id="title" class="step slide" data-x="-1000" data-rotate="90">
             <!-- <q> pour le fond en mode diapo -->
             <h1>Git starter commands</h1>
             <p>
@@ -91,19 +91,82 @@
                 <li>Ajouter un nouveau calque à un fichier index.html </li>
             </ul>
         </div>
+        <!-- layer 6  -->
+        <div class="step slide" id="layer-6" data-x="6000">
+            <h1>Affichage log</h1>
+            <p>
+                git log
+                <span> affiche les commits</span>
+            </p>
+            <p>
+                git log -1
+                <span>affiche le dernier commit   </span>
+            </p>
+            <p>git log --pretty=oneline --max-count=2
 
-    </div>
+                <span>affiche sur une ligne les 2 derniers commits   </span>
+            </p>
+            <p>
+                git log --pretty=oneline --since="5 minutes ago"
+                <span>affiche  les  derniers commits dans les 5 minutes  </span>
+            </p>
+            <p>
+                git log --pretty=oneline --until="5 minutes ago"
+                <span>affiche  les  derniers commits dans les 5 minutes  </span>
+            </p>
+            <p>
+                git log --pretty=oneline --author="Muriel M"
+                <span>affiche  les   commits d'un auteur (case sensitive)  </span>
+            </p>
+            <p>
+                git log --pretty=oneline --author=^"Mur"
+                <span>affiche  les   commits d'un auteur commence par Mur(case sensitive)  </span>
+            </p>
 
-    <!-- le minimum pour impress -->
-    <script src="node_modules/impress.js/js/impress.js"></script>
-    <script>
-        var rootElement = document.querySelector("#impress");
-        rootElement.addEventListener("impress:init", function () {
-            console.log("impress run...");
-        })
+            <p>
+                git log --oneline --all --pretty=format:"%h %cd %s (%an) %d" --since="1 days ago"
+                <span>affiche  les   commits d'un auteur commence par Mur(case sensitive)  </span>
+            </p>
 
-        impress().init();
-    </script>
+            <!-- layer-7  -->
+            <div class="step slide" id="layer-7" data-x="6000" data-y="1000">
+                <h1>format de log</h1>
+                <ul>
+                    <li>--pretty="..." format de sortie</li>
+                    <li>%h "abréviation de hash code commit"</li>
+                    <li>%d " commit décoration"</li>
+                    <li>%ad commit date</li>
+                    <li>%s commentaires</li>
+                    <li>%an author name</li>
+                    <li>--graph commit tree</li>
+                    <li>--date=... (du formatage standard)</li>
+                </ul>
+            </div>
+            <!-- layer-8  -->
+            <div class="step slide" id="layer-7" data-x="7000">
+                <h1>Version...</h1>
+                <p>
+                    git tag 
+                    <span>affichage des release  </span>
+                </p>
+                <p>
+                        git tag -a "your message"
+                        <span>création d'une release  </span>
+                    </p>
+    
+
+            </div>
+
+            <!-- le minimum pour impress -->
+            <script src="node_modules/impress.js/js/impress.js"></script>
+            <script>
+                var rootElement = document.querySelector("#impress");
+                rootElement.addEventListener("impress:init", function () {
+                    console.log("impress run...");
+                })
+
+                impress().init();
+            </script>
 </body>
 
 </html>
